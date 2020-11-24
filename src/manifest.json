@@ -1,0 +1,25 @@
+{
+  "$schema": "https://raw.githubusercontent.com/sketch-hq/SketchAPI/develop/docs/sketch-plugin-manifest-schema.json",
+  "icon": "icon.png",
+  "commands": [
+    {
+      "name": "Previous Artboard",
+      "identifier": "artboard-navigator.prev",
+      "script": "./my-command.js",
+      "handler": "previousArtboard"
+    },
+    {
+      "name": "Next Artboard",
+      "identifier": "artboard-navigator.next",
+      "script": "./my-command.js",
+      "handler": "nextArtboard"
+    }
+  ],
+  "menu": {
+    "title": "Artboard Navigator",
+    "items": [
+      "artboard-navigator.prev",
+      "artboard-navigator.next"
+    ]
+  }
+}
